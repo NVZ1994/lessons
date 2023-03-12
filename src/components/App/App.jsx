@@ -1,5 +1,6 @@
 import article from 'data/article.json';
 import data from 'data/data.json'
+import forbesdata from 'data/forbes.json'
 
 
 import {
@@ -38,7 +39,7 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
-        <ForbesList />
+        <ForbesList data={forbesdata} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
