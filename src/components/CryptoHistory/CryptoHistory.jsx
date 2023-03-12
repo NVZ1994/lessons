@@ -32,11 +32,10 @@ export const CryptoHistory = ({items}) => {
 };
 
 CryptoHistory.propTypes = {
-  items: PropTypes.shape({
+  items: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     price: PropTypes.number.isRequired,
-    amount:PropTypes.number.isRequired,
-    date:PropTypes.string.isRequired,
-
-  }).isRequired
+    amount: PropTypes.number.isRequired,
+    date: PropTypes.string.isRequired,
+  })).isRequired,
 }
