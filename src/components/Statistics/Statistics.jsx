@@ -23,6 +23,7 @@ export const Statistics = ({ data, title }) => {
       </StatisticsList>
     </>
   );
+
 };
 Statistics.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
