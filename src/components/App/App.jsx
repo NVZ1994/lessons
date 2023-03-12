@@ -2,8 +2,6 @@ import article from 'data/article.json';
 import data from 'data/data.json'
 import forbesdata from 'data/forbes.json';
 import transactions from "data/transactions.json";
-
-
 import {
   BlogCard,
   Container,
