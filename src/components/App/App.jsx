@@ -1,4 +1,5 @@
 import article from 'data/article.json';
+import data from 'data/data.json'
 
 
 import {
@@ -19,20 +20,20 @@ export const App = () => {
           Task 1
         </Heading>
         <BlogCard
-            id={article._id}
-            poster={article.poster}
-            tag={article.tag}
-            title={article.title}
-            description={article.description}
-            userName={article.name}
-            avatar={article.avatar}
-            postedAt={article.postedAt}
+          id={article._id}
+          poster={article.poster}
+          tag={article.tag}
+          title={article.title}
+          description={article.description}
+          userName={article.name}
+          avatar={article.avatar}
+          postedAt={article.postedAt}
         />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
-        <Statistics />
+        <Statistics title="Main Statistics" data={data} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
